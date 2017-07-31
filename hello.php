@@ -5,7 +5,7 @@
   <title>My Blog</title>
   <style>
 	div {
-  	background: pink;
+  	background: red;
 	}
 
 	nav > div {
