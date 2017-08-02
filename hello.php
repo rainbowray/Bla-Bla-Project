@@ -61,9 +61,9 @@
   		$autor = "Ilya";
   		// Изучаем работу <<< и _END
   		echo<<<_END
-df;lkmndlkfmngkldfg
-fg'lmf'bhmllfkmbh'lmfgbh
-fgbhklmfdhklmflhmfg
+bla bla bla bla bla bla bla bla bla
+bla bla bla bla bla bla bla bla bla
+bla bla bla bla bla bla bla bla bla!
 	- $autor.
 _END;
   		/*if(!empty($_POST['title']) && !empty($_POST['article'])){
