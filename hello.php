@@ -58,7 +58,8 @@
   	<div>
   	<pre>
   	<?php
-  		$autor = "Ilya";
+  		echo "Это строка ".__LINE__." в файле ".__FILE__;	//Тест "волшебных" переменных
+  		/*$autor = "Ilya";
   		// Изучаем работу <<< и _END
   		$text = <<<_END
 bla bla bla bla bla bla bla bla bla
@@ -66,7 +67,7 @@ bla bla bla bla bla bla bla bla bla
 bla bla bla bla bla bla bla bla bla!
 	- $autor.
 _END;
-		echo $text;
+		echo $text;*/
   		/*if(!empty($_POST['title']) && !empty($_POST['article'])){
   			echo $_POST['title'].'<br>'.$_POST['article'].'<br>';
   		}	else{
