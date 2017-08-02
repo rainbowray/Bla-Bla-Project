@@ -60,12 +60,13 @@
   	<?php
   		$autor = "Ilya";
   		// Изучаем работу <<< и _END
-  		echo<<<_END
+  		$text = <<<_END
 bla bla bla bla bla bla bla bla bla
 bla bla bla bla bla bla bla bla bla
 bla bla bla bla bla bla bla bla bla!
 	- $autor.
 _END;
+		echo $text;
   		/*if(!empty($_POST['title']) && !empty($_POST['article'])){
   			echo $_POST['title'].'<br>'.$_POST['article'].'<br>';
   		}	else{
