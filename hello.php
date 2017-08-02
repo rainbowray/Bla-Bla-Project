@@ -58,11 +58,19 @@
   	<div>
   	<pre>
   	<?php
-  		if(!empty($_POST['title']) && !empty($_POST['article'])){
+  		$autor = "Ilya";
+  		// Изучаем работу <<< и _END
+  		echo<<<_END
+df;lkmndlkfmngkldfg
+fg'lmf'bhmllfkmbh'lmfgbh
+fgbhklmfdhklmflhmfg
+	- $autor.
+_END;
+  		/*if(!empty($_POST['title']) && !empty($_POST['article'])){
   			echo $_POST['title'].'<br>'.$_POST['article'].'<br>';
   		}	else{
   			echo "<h1>HUITA!</h1><br><p>NE<br>RABOTAET!</p>";
-  		}
+  		}*/
   	?>
   	</pre>
     </div>
