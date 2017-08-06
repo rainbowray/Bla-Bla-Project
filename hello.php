@@ -57,23 +57,7 @@
   	<div>
   	<pre>
   	<?php
-  		$storageData = [
-    		[
-        		'firstName' => 'Alex',
-        		'lastName' => 'Guber'
-    		],
-    		[
-        		'firstName' => 'Fred',
-        		'lastName' => 'Black'
-    		],
-    		[
-        	'firstName' => 'Nix',
-        	'lastName' => 'Patton'
-    		],
-		];
-		echo '<pre>';
-		var_dump($storageData);
-		echo '</pre>';
+  		require_once 'var_dump_helper.php';
   		$Post=[
   			"userID"=>1,	// id:integer - ID пользователя
 			"titlePost"=>"My first Post (that is Title)", //title:string - Заголовок поста
@@ -87,14 +71,17 @@
 			'numComments'=>45, //numComments:integer - кол-во комментариев
 			'startImg'=>'href', //img:string - ссылка на стартовую картинку (?)
 		];
-  		if(!empty($_POST['title']) && !empty($_POST['article'])){
+		echo '<pre>';
+		var_dump($Post);
+		echo '</pre>';
+  		/*if(!empty($_POST['title']) && !empty($_POST['article'])){
   			echo $_POST['title'].'<br>'.$_POST['article'].'<br>';
   		}	else{
   			echo "
   			<h1>$Post[titlePost]</h1><br>
   			<p>$Post[textPost]</p>
   			";
-  		}
+  		}*/
   	?>
   	</pre>
     </div>
