@@ -35,7 +35,6 @@
 	}
   </style>
 </head>
-
 <body>
   <header>
   </header>
@@ -58,10 +57,26 @@
   	<div>
   	<pre>
   	<?php
+  		$Post=[
+  			"userID"=>1,	// id:integer - ID пользователя
+			"title_Post"=>"My first Post (that is Title)", //title:string - Заголовок поста
+			"text_Post"=>"Bla-bla-bla-bla-bla-bla-bla", //article:string - Текст поста
+			"first_text_Post"=>"Bla-bla-bla-bla", //articlePreview:string - Первые строчки поста на главной странице
+			"create_Date_Post"=>12062017, //createDate:integer - дата создания поста
+			"name_Creator"=>"Ilya", //nameCreator:string - имя создателя
+			"name_Updater"=>"Ilya-Updater", //nameUpdater:string - имя апдейтера (?)
+			"num_Likes"=>999, //numLikes:integer - кол-во лайков
+			'num_Dislikes'=>13, //numDislikes:integer - кол-во дизлайков
+			'num_Comments'=>45, //numComments:integer - кол-во комментариев
+			'start_img'=>'href', //img:string - ссылка на стартовую картинку (?)
+		];
   		if(!empty($_POST['title']) && !empty($_POST['article'])){
   			echo $_POST['title'].'<br>'.$_POST['article'].'<br>';
   		}	else{
-  			echo "<h1>HUITA!</h1><br><p>NE<br>RABOTAET!</p>";
+  			echo "
+  			<h1>$Post[title_Post]</h1><br>
+  			<p>$Post[text_Post]</p>
+  			";
   		}
   	?>
   	</pre>
@@ -71,7 +86,6 @@
   </aside>
   <footer>
     &copy; Coryright
-  </footer>
+  </footer> 
 </body>
-
 </html>
