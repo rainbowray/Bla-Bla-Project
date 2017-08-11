@@ -58,7 +58,7 @@
   	<pre>
   	<?php
   		require_once 'var_dump_helper.php';
-  		$Post=[
+  		$post=[
   			"userID"=>1,	// id:integer - ID пользователя
 			"titlePost"=>"My first Post (that is Title)", //title:string - Заголовок поста
 			"textPost"=>"Bla-bla-bla-bla-bla-bla-bla", //article:string - Текст поста
