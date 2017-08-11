@@ -58,18 +58,6 @@
   	<div>
   	<pre>
   	<?php
-  		$firstObjest = new dataBase;
-  		$firstObjest -> name = "Ilya";
-  		$firstObjest -> password = "secret";
-  		echo $firstObjest -> get_password() . "<br>";
-  		class dataBase
-  		{
-  			public $name, $password;
-  			function get_password()
-  			{
-  				return $this->password;
-  			}
-  		}
   		echo "Это строка ".__LINE__." в файле ".__FILE__;	//Тест "волшебных" переменных
   		/*$autor = "Ilya";
   		// Изучаем работу <<< и _END
