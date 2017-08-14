@@ -39,7 +39,7 @@
 <body>
   <header>
   </header>
-  <div class='head-block'>
+  <!--<div class='head-block'>
     <nav>
       <div><h1>Bla-Bla Project</h1></div>
       <div><a href="1.php">First</a></div>
@@ -53,10 +53,9 @@
         <input type="submit" name="submit" value="Submit">
       </form>     
     </div>
-  </div>
+  </div> -->
   <article class="main-post">
   	<div>
-  	<pre>
   	<?php
   		//Тестируем шаблоны
   		echo '<pre>';
@@ -88,7 +87,6 @@ _END;
   			echo "<h1>HUITA!</h1><br><p>NE<br>RABOTAET!</p>";
   		}*/
   	?>
-  	</pre>
     </div>
   </article>
   <aside>
