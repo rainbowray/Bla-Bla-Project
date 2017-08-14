@@ -58,14 +58,19 @@
   	<div>
   	<pre>
   	<?php
-  		$var1='value1';
-  		$var2='value2';
-  		$var3='value3';
-  		$var4='value4';
-  		$var5='value5';;
+  		//Тестируем шаблоны
   		echo '<pre>';
-  		//print_r();
-  		print_r(compact(explode(' ',"var1 var2 var3 var4 var5")));
+  		$h='Rasmus';
+  		printf("[%s]\n",		$h);
+  		printf("[%12s]\n",		$h);
+  		printf("[%-12s]\n",		$h);
+  		printf("[%012s]\n",		$h);
+  		printf("[%'#12s]\n\n",	$h);
+  		$d='Rasmus Lerdorf';
+  		printf("[%12.8s]\n",			$d);
+  		printf("[%12.12s]\n\n\n",		$d);
+  		$test=sprintf("[%-'@12.10s]\n",	$d);
+  		echo $test;
   		echo '</pre>';
   		echo "Это строка ".__LINE__." в файле ".__FILE__;	//Тест "волшебных" переменных
   		/*$autor = "Ilya";
