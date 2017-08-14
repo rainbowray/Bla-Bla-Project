@@ -58,6 +58,15 @@
   	<div>
   	<pre>
   	<?php
+  		$var1='value1';
+  		$var2='value2';
+  		$var3='value3';
+  		$var4='value4';
+  		$var5='value5';;
+  		echo '<pre>';
+  		//print_r();
+  		print_r(compact(explode(' ',"var1 var2 var3 var4 var5")));
+  		echo '</pre>';
   		echo "Это строка ".__LINE__." в файле ".__FILE__;	//Тест "волшебных" переменных
   		/*$autor = "Ilya";
   		// Изучаем работу <<< и _END
