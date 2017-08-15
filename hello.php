@@ -37,8 +37,6 @@
 </head>
 
 <body>
-  <header>
-  </header>
   <!--<div class='head-block'>
     <nav>
       <div><h1>Bla-Bla Project</h1></div>
@@ -56,37 +54,31 @@
   </div> -->
   <article class="main-post">
   	<div>
-  	<?php
+  		<?php
+  		$fh=fopen("testfile.txt",'r+') or die("Сбой");
+  		$text=fgets($fh);
+  		fseek($fh, 9, SEEK_SET);
+  		fwrite($fh, "$text") or die("Сбой");
+  		fclose($fh);
+  		echo "Success<br>";
+
   		//Тестируем шаблоны
-  		echo '<pre>';
-  		$h='Rasmus';
-  		printf("[%s]\n",		$h);
-  		printf("[%12s]\n",		$h);
-  		printf("[%-12s]\n",		$h);
-  		printf("[%012s]\n",		$h);
-  		printf("[%'#12s]\n\n",	$h);
-  		$d='Rasmus Lerdorf';
-  		printf("[%12.8s]\n",			$d);
-  		printf("[%12.12s]\n\n\n",		$d);
-  		$test=sprintf("[%-'@12.10s]\n",	$d);
-  		echo $test;
-  		echo '</pre>';
   		echo "Это строка ".__LINE__." в файле ".__FILE__;	//Тест "волшебных" переменных
   		/*$autor = "Ilya";
   		// Изучаем работу <<< и _END
   		$text = <<<_END
-bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla!
-	- $autor.
-_END;
+		bla bla bla bla bla bla bla bla bla
+		bla bla bla bla bla bla bla bla bla
+		bla bla bla bla bla bla bla bla bla!
+		- $autor.
+		_END;
 		echo $text;*/
   		/*if(!empty($_POST['title']) && !empty($_POST['article'])){
   			echo $_POST['title'].'<br>'.$_POST['article'].'<br>';
   		}	else{
   			echo "<h1>HUITA!</h1><br><p>NE<br>RABOTAET!</p>";
   		}*/
-  	?>
+  		?>
     </div>
   </article>
   <aside>
