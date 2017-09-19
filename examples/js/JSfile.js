@@ -1,8 +1,3 @@
-a=2
-b=7
-document.write(product(a,b))
-
-function product(a,b)
-{
-	return a*b
-}
+sports=[7,23,6,74]
+sports.sort(function(a,b){return b-a})
+document.write(sports)
